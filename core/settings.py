@@ -23,11 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "RDKAOA1siCFatEPfznz8AFxTe8J9kDea"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
 # Render Deployment Code
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True # 'RENDER' not in os.environ
 
 # HOSTs List
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
